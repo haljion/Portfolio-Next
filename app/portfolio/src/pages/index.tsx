@@ -2,6 +2,7 @@ import { Box, Center, Flex, HStack, Spacer } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Header from "../components/header";
 
 const Home: NextPage = () => {
   return (
@@ -9,30 +10,14 @@ const Home: NextPage = () => {
       <Head>
         <title>HOME</title>
       </Head>
-
-      <Flex bg="black" color="#ff00aa" h={100} w="100%" fontSize={20}>
-        <Center bg="white">
-          <Link href="/" as="/">
-            <a>haljion's portfolio</a>
-          </Link>
-        </Center>
-        <Spacer />
-        <HStack>
-          <Link href="/aboutme" as="/aboutme">
-            <a>ABOUTME</a>
-          </Link>
-
-          <Link href="/skill" as="/skill">
-            <a>SKILL</a>
-          </Link>
-
-          <Link href="/portfolio" as="/portfolio">
-            <a>PORTFOLIO</a>
-          </Link>
-        </HStack>
-      </Flex>
-
-      <Center>haljion's portfolio</Center>
+      <Header />
+      <Center
+        bg="linear-gradient(120deg, #b5d2dd 0 65%, #f1f0dd 65% 100%)"
+        h="95vh"
+        w="100vw"
+      >
+        haljion's portfolio
+      </Center>
     </>
   );
 };
