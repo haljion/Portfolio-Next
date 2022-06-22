@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <Flex bg="#6d7d7f" h="5vh" w="100vw" fontSize="2rem">
-      <Center bg="#f1f0dd">
+    <Flex color="#6d7d7f" h="5vh" w="100vw" fontSize="2rem">
+      <Center>
         <Link href="/" as="/">
           <a>haljion's portfolio</a>
         </Link>
