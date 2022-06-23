@@ -1,7 +1,8 @@
 import { Flex, Center, Spacer, HStack } from "@chakra-ui/react";
+import { NextPage } from "next";
 import Link from "next/link";
 
-const Header = () => {
+const PageTitle: NextPage<{ text: string }> = (props) => {
   return (
     <Center
       id="pageTitle"
@@ -11,9 +12,9 @@ const Header = () => {
       bg="#f1f0dd"
       w="80vw"
     >
-      ABOUT ME
+      {props.text}
     </Center>
   );
 };
 
-export default Header;
+export default PageTitle;

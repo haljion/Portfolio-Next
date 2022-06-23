@@ -1,7 +1,8 @@
 import { Flex, Center, Spacer, HStack } from "@chakra-ui/react";
+import { NextPage } from "next";
 import Link from "next/link";
 
-const Header = () => {
+const Header: NextPage = () => {
   return (
     <Flex color="#6d7d7f" h="5vh" w="100vw" fontSize="2rem">
       <Center>
