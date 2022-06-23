@@ -6,11 +6,10 @@ const PageTitle: NextPage<{ text: string }> = (props) => {
   return (
     <Center
       id="pageTitle"
-      borderWidth="medium"
-      borderColor="#6d7d7f"
-      borderStyle="double"
-      bg="#f1f0dd"
-      w="80vw"
+      color="#ffffff"
+      bg="#6d7d7f"
+      fontWeight="bold"
+      w="80%"
     >
       {props.text}
     </Center>
