@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -12,16 +12,18 @@ const Home: NextPage = () => {
         <title>HOME</title>
       </Head>
 
-      <Box>haljion's portfolio</Box>
-      <Link href="/aboutme" as="/aboutme">
-        <Button
-          variant="contained"
-          color="secondary"
-          endIcon={<ArrowCircleRightIcon />}
-        >
-          MORE ABOUT ME!
-        </Button>
-      </Link>
+      <Container maxWidth="sm">
+        <Typography>haljion's portfolio</Typography>
+        <Link href="/aboutme" as="/aboutme">
+          <Button
+            variant="contained"
+            color="secondary"
+            endIcon={<ArrowCircleRightIcon />}
+          >
+            MORE ABOUT ME!
+          </Button>
+        </Link>
+      </Container>
     </>
   );
 };
