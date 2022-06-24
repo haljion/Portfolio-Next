@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Sidebar from "../components/sidebar";
 import PageTitle from "../components/pageTitle";
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 const AboutMe: NextPage = () => {
   return (
@@ -11,15 +11,12 @@ const AboutMe: NextPage = () => {
       <Head>
         <title>about me</title>
       </Head>
-      <Sidebar />
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-      >
+      <Grid container justifyContent="center" alignItems="center">
         <Grid item xs={3}>
-          ABOUT ME
+          <Sidebar />
+        </Grid>
+        <Grid item xs={9}>
+          <Box fontSize="3rem">ABOUT ME</Box>
         </Grid>
       </Grid>
       {/* <HStack>
