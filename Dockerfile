@@ -8,8 +8,6 @@ WORKDIR /app
 
 RUN yarn add -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser
 RUN yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
-# yarn add @mui/material @emotion/react @emotion/styled @mui/icons-material @emotion/server @emotion/cache
-
-# RUN yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion @chakra-ui/icons
+# yarn add @mui/material @emotion/react @emotion/styled @mui/icons-material @emotion/server
 
 # RUN yarn install

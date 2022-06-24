@@ -1,8 +1,8 @@
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Button, Center, VStack } from "@chakra-ui/react";
+import { Button } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Sidebar from "../components/sidebar";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +10,11 @@ const Home: NextPage = () => {
       <Head>
         <title>HOME</title>
       </Head>
-      <VStack
+      <Button variant="contained" color="secondary">
+        Hello World
+      </Button>
+      <Sidebar />
+      {/* <VStack
         bg="linear-gradient(120deg, #b5d2dd 0 65%, #f1f0dd 65% 100%)"
         h="100vh"
         w="100vw"
@@ -32,7 +36,7 @@ const Home: NextPage = () => {
             MORE ABOUT ME!
           </Button>
         </Link>
-      </VStack>
+      </VStack> */}
     </>
   );
 };

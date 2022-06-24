@@ -1,14 +1,3 @@
-import {
-  Box,
-  Center,
-  HStack,
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
-  VStack,
-} from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -21,16 +10,15 @@ const Skill: NextPage = () => {
       <Head>
         <title>Skill</title>
       </Head>
-      <HStack>
+      {/* <HStack>
         <Sidebar />
         <VStack h="100vh" w="85vw" fontSize="3rem" bg="#f1f0dd">
           <PageTitle text="SKILL" />
 
-          <Tabs>
+          <Tabs size="md">
             <TabList>
-              <Tab>One</Tab>
-              <Tab>Two</Tab>
-              <Tab>Three</Tab>
+              <Tab>Language/Framework</Tab>
+              <Tab>Other</Tab>
             </TabList>
 
             <TabPanels>
@@ -40,13 +28,10 @@ const Skill: NextPage = () => {
               <TabPanel>
                 <p>two!</p>
               </TabPanel>
-              <TabPanel>
-                <p>three!</p>
-              </TabPanel>
             </TabPanels>
           </Tabs>
         </VStack>
-      </HStack>
+      </HStack> */}
     </>
   );
 };
